@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="buttons">
+	<a href="#description" class="mybtn preview">Description</a>
+	<a href="#html" class="mybtn preview">html</a>
+	<a href="#css" class="mybtn css">css</a>
+	<a href="#preview" class="mybtn exe">Preview</a>		
+</div>
+
+<h2><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
+<div id="mm_content">
+	<div class="wrapper">
+		<%- @content %>
+	</div>
+	<h3 id="html">HTML<small>(click to show/hide)</small></h3>
+	<pre><code class="lang-html"><%- @include('/posts/'+@document.folder+'/default.html').replace /\START IMPORT....[\w\W]*? STOP/, "" %></code></pre>
+
+	<h3 id="css">LESS<small>(click to show/hide)</small></h3>
+	<pre><code id="html" class="lang-scss"><%- @include('/posts/'+@document.folder+'/default.css').replace /\START IMPORT \*\/[\w\W]*?\/\* STOP/, "" %></code></pre>
+
+	<div class="size_buttons">
+		<a href="#" data-width="100%" class="mybtn size active">Desktop</a>	
+		<a href="#" data-width="920" class="mybtn size">Tablet</a>
+		<a href="#" data-width="480" class="mybtn size">Mobile</a>
+	</div>
+	<div id="preview">
+		<!--link rel="stylesheet" type="text/css" href="<%- @document.folder %>/default.css"-->
+		<iframe src="/posts/<%- @document.folder %>/default.html"><link rel="stylesheet" type="text/css" href="<%- @document.folder %>/default.css"></iframe>
+	</div>
+</div>

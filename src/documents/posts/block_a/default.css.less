@@ -1,0 +1,38 @@
+/* START IMPORT */
+@import "../../styles/mixins.css.less";
+@import "../../styles/variables.css.less";
+@import "../../styles/typo.css.less";
+/* STOP */
+.block_a {
+	display: inline-block;
+	width: 200px;
+	padding: 25px;
+	background: #ebf0f5;
+	.border_radius(4px);
+	position: relative;
+	text-align: left;
+	margin: 0 16px;
+	h3 {
+		color: #000;
+	}
+	p {
+		color: #484848;
+		font-size: 16px;
+		margin: 10px 0;
+	}
+	a {
+		font-weight: bold;
+	}
+	&:after {
+		content:'';
+		background: url(@sprite) -111px 0 no-repeat;
+		width: 56px;
+		height: 56px;		
+		position: absolute;
+		left: 97px;
+		top: -23px;		
+	}
+	@media screen and (max-width: 940px) {
+		width: auto;
+	}
+}

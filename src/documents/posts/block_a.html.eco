@@ -1,0 +1,9 @@
+---
+layout: 'content'
+folder: 'block_a'
+---
+<h3 id="description">Description</h3>
+
+Simple .block_a module.
+
+

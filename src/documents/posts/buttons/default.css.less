@@ -1,0 +1,75 @@
+/* START IMPORT */
+@import "../../styles/mixins.css.less";
+@import "../../styles/variables.css.less";
+@import "../../styles/typo.css.less";
+/* STOP */
+.btn {
+	position: relative;
+	background: #cc0000;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	.border_radius (7px);
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.i_1 {
+  padding-left: 56px;
+}
+.i_1:before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -13px;
+  background: url(@sprite) 0px -138px no-repeat;
+}
+.i_2 {
+  padding-left: 56px;
+}
+.i_2:before {
+  content: '';
+  width: 34px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -18px;
+  background: url(@sprite) -28px -138px no-repeat;
+}
+.i_3 {
+  padding-left: 56px;
+}
+.i_3:before {
+  content: '';
+  width: 35px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -12px;
+  background: url(@sprite) -63px -138px no-repeat;
+}
+
+
+.btn2 {
+  .btn2;
+}
+
+.btn4act {
+  .btn4act;
+}
+
+
+
+
+
+

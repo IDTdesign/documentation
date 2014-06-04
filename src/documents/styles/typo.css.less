@@ -1,0 +1,95 @@
+/*typo*/
+@import "mixins.css.less";
+@import "variables.css.less";
+
+@font-face {
+    font-family: 'Tex Gyre Heros';
+    src: url('../../fonts/texgyreheros-regular-webfont.eot');
+    src: url('../../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Tex Gyre Heros';
+    src: url('../../fonts/texgyreheros-italic-webfont.eot');
+    src: url('../../fonts/texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/texgyreheros-italic-webfont.woff') format('woff'),
+         url('../../fonts/texgyreheros-italic-webfont.ttf') format('truetype'),
+         url('../../fonts/texgyreheros-italic-webfont.svg#texgyreherositalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Tex Gyre Heros';
+    src: url('../../fonts/texgyreheros-bolditalic-webfont.eot');
+    src: url('../../fonts/texgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('../../fonts/texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('../../fonts/texgyreheros-bolditalic-webfont.svg#texgyreherosbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Tex Gyre Heros';
+    src: url('../../fonts/texgyreheros-bold-webfont.eot');
+    src: url('../../fonts/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/texgyreheros-bold-webfont.woff') format('woff'),
+         url('../../fonts/texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('../../fonts/texgyreheros-bold-webfont.svg#texgyreherosbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Tex Gyre Heros';
+}
+
+a {
+	text-decoration: none;
+	color: #006bbd;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+html, button, input, select, textarea {
+    color: #222222;
+}
+html, button, input, select, textarea {
+    font-family: sans-serif;
+}
+body {
+	padding: 40px 0;
+}
+
+
+#states {
+	position: fixed;
+	top: 0;	
+	left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+	b{
+		margin: 0 10px 0 0;
+		font-weight: normal;
+		border: solid 1px gray;
+		font-size: 10px;
+		padding: 3px 10px;
+		display: inline-block;
+		cursor: pointer;
+        &.active {
+            background: #eee;
+        }
+	}
+}

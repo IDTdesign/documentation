@@ -1,0 +1,9 @@
+---
+layout: 'content'
+folder: 'my_account'
+---
+<h3 id="description">Description</h3>
+
+My account.
+<br>
+Documentation for gauge: <a href="https://github.com/aterrien/jQuery-Knob">https://github.com/aterrien/jQuery-Knob</a>

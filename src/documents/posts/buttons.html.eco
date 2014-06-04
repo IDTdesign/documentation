@@ -1,0 +1,13 @@
+---
+layout: 'content'
+folder: 'buttons'
+---
+<h3 id="description">Description</h3>
+
+Simple red button .btn with icons (.i_1 .. .i_3);<br/>
+<br/>
+Simple action button .btn4act;<br/>
+<br/>
+Simple button .btn2;<br/>
+
+
