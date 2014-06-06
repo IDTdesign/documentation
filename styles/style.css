@@ -1,0 +1,89 @@
+/* Your styles go here */
+body,
+html {
+  background: #fff;
+  margin: 0;
+  min-width: 1000px;
+}
+a {
+  color: #006bbd;
+  text-decoration: none;
+}
+article {
+  max-width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1400px) {
+  article {
+    margin-left: 130px;
+  }
+}
+header {
+  max-width: 1200px;
+  margin: auto;
+}
+header h1 {
+  text-transform: uppercase;
+}
+.mybtn {
+  text-align: center;
+  display: block;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+}
+.size {
+  color: #000;
+  background: none;
+}
+.size_buttons {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+.size_buttons .mybtn {
+  float: left;
+  margin-right: 10px;
+  outline: none;
+}
+.size_buttons .mybtn.active {
+  background: #eee;
+}
+#buttons {
+  position: fixed;
+  left: 10px;
+  top: 100px;
+  width: 100px;
+}
+#preview {
+  clear: both;
+  padding-bottom: 200px;
+}
+#preview iframe {
+  width: 100%;
+  min-height: 500px;
+  border: dotted 1px #ccc;
+}
+#html,
+#css {
+  cursor: pointer;
+  border-bottom: solid 2px #006BBD;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+#description {
+  margin: 0 0 30px 0;
+}
+#mm_content pre {
+  display: none;
+}
+#mm_content .wrapper {
+  padding: 20px;
+  background: #efeded;
+}

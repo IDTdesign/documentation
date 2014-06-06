@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="default.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/knob.js"></script>
+
+<div class="my_account">
+	<div class="middle">
+		<h3>My account</h3>
+		<h4>Hi Gabriella!</h4>
+		<div class="image_area">
+			<img src="http://dummyimage.com/150x150/000000/fff" alt="Hi Gabriella!" />
+		</div>
+		<dl>
+			<dt>Name</dt>
+			<dd>
+				Gabriela Estevez
+			</dd>
+			<dt>Email</dt>
+			<dd>
+				gabriela.estevez@hotmail.com
+			</dd>
+			<dt>International Calling Access Number</dt>
+			<dd>
+				(201) 204-1125
+			</dd>
+		</dl>
+	</div>	
+	<div class="service_line">
+		<div class="gauge">
+			<div class="progress">
+				<input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial">			
+				<script>
+					$(function() {
+					    $(".dial").knob({'readOnly': true, 'fgColor':"#cc0000", 'bgColor':'#9eb7cf'});
+					});
+				</script>			
+			</div>
+			<span class="message">Your Profile is 30% Complete</span>
+		</div>
+		<a href="#" class="btn2">Edit profile</a>
+	</div>
+</div>

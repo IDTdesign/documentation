@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Properities -->
+	<title>[global] Buttons | Documentation [alpha]</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.68.0" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="http://idtdesign.github.io/documentation/vendor/normalize.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/documentation/vendor/h5bp.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/documentation/styles/style.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/documentation/styles/highlight.css" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+<body>
+	<header>
+		<h1><a href="http://idtdesign.github.io/documentation">Documentation [alpha]</a></h1>
+	</header>
+	<article>
+		<div id="buttons">
+	<a href="#description" class="mybtn preview">Description</a>
+	<a href="#html" class="mybtn preview">html</a>
+	<a href="#css" class="mybtn css">css</a>
+	<a href="#preview" class="mybtn exe">Preview</a>		
+</div>
+
+<h2><a href="/posts/buttons.html">[global] Buttons</a></h2>
+<div id="mm_content">
+	<div class="wrapper">
+		<h3 id="description">Description</h3>
+
+Simple red button .btn with icons (.i_1 .. .i_3);<br/>
+<br/>
+Simple action button .btn4act;<br/>
+<br/>
+Simple button .btn2;<br/>
+	</div>
+	<h3 id="html">HTML<small>(click to show/hide)</small></h3>
+	<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!--  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span>&gt;</span>Interational calling<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn2"</span>&gt;</span>Edit profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn4act"</span>&gt;</span>Edit profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre>
+
+	<h3 id="css">generated CSS<small>(click to show/hide)</small></h3>
+	<pre class="highlight"><code class="hljs scss"><span class="hljs-comment">/*  */</span>
+<span class="hljs-class">.btn</span> {
+  <span class="hljs-attribute">position</span><span class="hljs-value">: relative;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#cc0000</span>;</span>
+  <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">10</span>px <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#fff</span>;</span>
+  <span class="hljs-attribute">font-weight</span><span class="hljs-value">: bold;</span>
+  <span class="hljs-attribute">text-transform</span><span class="hljs-value">: uppercase;</span>
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+  -webkit-<span class="hljs-attribute">border-radius</span><span class="hljs-value">: <span class="hljs-number">7</span>px;</span>
+  -moz-<span class="hljs-attribute">border-radius</span><span class="hljs-value">: <span class="hljs-number">7</span>px;</span>
+  <span class="hljs-attribute">border-radius</span><span class="hljs-value">: <span class="hljs-number">7</span>px;</span>
+  <span class="hljs-attribute">cursor</span><span class="hljs-value">: pointer;</span>
+}
+<span class="hljs-class">.btn</span><span class="hljs-pseudo">:hover</span> {
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+}
+<span class="hljs-class">.i_1</span> {
+  <span class="hljs-attribute">padding-left</span><span class="hljs-value">: <span class="hljs-number">56</span>px;</span>
+}
+<span class="hljs-class">.i_1</span><span class="hljs-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span><span class="hljs-value">: <span class="hljs-string">''</span>;</span>
+  <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">26</span>px;</span>
+  <span class="hljs-attribute">height</span><span class="hljs-value">: <span class="hljs-number">26</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">50</span>%;</span>
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-attribute">margin-top</span><span class="hljs-value">: -<span class="hljs-number">13</span>px;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: url(<span class="hljs-string">'../../img/sprite.png'</span>) <span class="hljs-number">0</span>px -<span class="hljs-number">138</span>px no-repeat;</span>
+}
+<span class="hljs-class">.i_2</span> {
+  <span class="hljs-attribute">padding-left</span><span class="hljs-value">: <span class="hljs-number">56</span>px;</span>
+}
+<span class="hljs-class">.i_2</span><span class="hljs-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span><span class="hljs-value">: <span class="hljs-string">''</span>;</span>
+  <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">34</span>px;</span>
+  <span class="hljs-attribute">height</span><span class="hljs-value">: <span class="hljs-number">36</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">50</span>%;</span>
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">10</span>px;</span>
+  <span class="hljs-attribute">margin-top</span><span class="hljs-value">: -<span class="hljs-number">18</span>px;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: url(<span class="hljs-string">'../../img/sprite.png'</span>) -<span class="hljs-number">28</span>px -<span class="hljs-number">138</span>px no-repeat;</span>
+}
+<span class="hljs-class">.i_3</span> {
+  <span class="hljs-attribute">padding-left</span><span class="hljs-value">: <span class="hljs-number">56</span>px;</span>
+}
+<span class="hljs-class">.i_3</span><span class="hljs-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span><span class="hljs-value">: <span class="hljs-string">''</span>;</span>
+  <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">35</span>px;</span>
+  <span class="hljs-attribute">height</span><span class="hljs-value">: <span class="hljs-number">24</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">50</span>%;</span>
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">10</span>px;</span>
+  <span class="hljs-attribute">margin-top</span><span class="hljs-value">: -<span class="hljs-number">12</span>px;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: url(<span class="hljs-string">'../../img/sprite.png'</span>) -<span class="hljs-number">63</span>px -<span class="hljs-number">138</span>px no-repeat;</span>
+}
+<span class="hljs-class">.btn2</span> {
+  <span class="hljs-comment">/*
+1 - border
+2 - pressed inner shadow
+3 - gradient
+4 - focus
+*/</span>
+  <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">border-radius</span><span class="hljs-value">: <span class="hljs-number">5</span>px;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">14</span>px <span class="hljs-number">34</span>px;</span>
+  <span class="hljs-attribute">text-transform</span><span class="hljs-value">: uppercase;</span>
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#CC0000</span>;</span>
+  <span class="hljs-attribute">text-shadow</span><span class="hljs-value">: <span class="hljs-number">0</span> <span class="hljs-number">1</span>px <span class="hljs-number">0</span> <span class="hljs-hexcolor">#FFF</span>;</span>
+  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-number">1</span>em;</span>
+  <span class="hljs-attribute">font-weight</span><span class="hljs-value">: bold;</span>
+  <span class="hljs-attribute">line-height</span><span class="hljs-value">: <span class="hljs-number">1.2</span>;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#e0e0ed</span>;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">2.2</span>em <span class="hljs-number">2.2</span>em -<span class="hljs-number">1.1</span>em <span class="hljs-hexcolor">#ffffff</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+  <span class="hljs-attribute">transition</span><span class="hljs-value">: all <span class="hljs-number">0.2</span>s;</span>
+}
+<span class="hljs-class">.btn2</span><span class="hljs-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#FD0000</span>;</span>
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#ECECFB</span>;</span>
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">2.2</span>em <span class="hljs-number">2.2</span>em -<span class="hljs-number">1.1</span>em <span class="hljs-hexcolor">#ffffff</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+}
+<span class="hljs-class">.btn2</span><span class="hljs-pseudo">:focus</span> {
+  <span class="hljs-attribute">outline</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">1.1</span>em <span class="hljs-number">1.1</span>em -<span class="hljs-number">0.6</span>em <span class="hljs-hexcolor">#ffffff</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">3</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+}
+<span class="hljs-class">.btn2</span><span class="hljs-pseudo">:active</span> {
+  <span class="hljs-attribute">outline</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">1</span>px <span class="hljs-number">2</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">1.1</span>em <span class="hljs-number">1.1</span>em -<span class="hljs-number">0.6</span>em <span class="hljs-hexcolor">#ffffff</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+  <span class="hljs-attribute">transition-duration</span><span class="hljs-value">: <span class="hljs-number">0.1</span>s;</span>
+}
+<span class="hljs-class">.btn2</span><span class="hljs-class">.disabled</span> {
+  <span class="hljs-attribute">opacity</span><span class="hljs-value">: <span class="hljs-number">0.45</span>;</span>
+  <span class="hljs-attribute">cursor</span><span class="hljs-value">: default;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: none;</span>
+}
+<span class="hljs-class">.btn2</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:hover</span>,
+<span class="hljs-class">.btn2</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:focus</span>,
+<span class="hljs-class">.btn2</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:active</span> {
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#e0e0ed</span>;</span>
+}
+<span class="hljs-class">.btn4act</span> {
+  <span class="hljs-comment">/*
+1 - border
+2 - pressed inner shadow
+3 - gradient
+4 - focus
+*/</span>
+  <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">border-radius</span><span class="hljs-value">: <span class="hljs-number">5</span>px;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">15</span>px <span class="hljs-number">34</span>px;</span>
+  <span class="hljs-attribute">text-transform</span><span class="hljs-value">: uppercase;</span>
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#fff</span>;</span>
+  <span class="hljs-attribute">text-shadow</span><span class="hljs-value">: <span class="hljs-number">0</span> <span class="hljs-number">1</span>px <span class="hljs-number">0</span> <span class="hljs-hexcolor">#950000</span>;</span>
+  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-number">1</span>em;</span>
+  <span class="hljs-attribute">font-weight</span><span class="hljs-value">: bold;</span>
+  <span class="hljs-attribute">line-height</span><span class="hljs-value">: <span class="hljs-number">1.2</span>;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#b50000</span>;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">2.2</span>em <span class="hljs-number">2.2</span>em -<span class="hljs-number">1.1</span>em <span class="hljs-hexcolor">#cb0000</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+  <span class="hljs-attribute">transition</span><span class="hljs-value">: all <span class="hljs-number">0.2</span>s;</span>
+}
+<span class="hljs-class">.btn4act</span><span class="hljs-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#cd0000</span>;</span>
+  <span class="hljs-attribute">text-shadow</span><span class="hljs-value">: <span class="hljs-number">0</span> <span class="hljs-number">1</span>px <span class="hljs-number">0</span> <span class="hljs-hexcolor">#be0000</span>;</span>
+  <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">2.2</span>em <span class="hljs-number">2.2</span>em -<span class="hljs-number">1.1</span>em <span class="hljs-hexcolor">#fd0000</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+}
+<span class="hljs-class">.btn4act</span><span class="hljs-pseudo">:focus</span> {
+  <span class="hljs-attribute">outline</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">1.1</span>em <span class="hljs-number">1.1</span>em -<span class="hljs-number">0.6</span>em <span class="hljs-hexcolor">#cb0000</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">3</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+}
+<span class="hljs-class">.btn4act</span><span class="hljs-pseudo">:active</span> {
+  <span class="hljs-attribute">outline</span><span class="hljs-value">: none;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: /* <span class="hljs-number">1</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>px rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>), /* <span class="hljs-number">2</span> */ inset <span class="hljs-number">1</span>px <span class="hljs-number">2</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>), /* <span class="hljs-number">3</span> */ inset <span class="hljs-number">0</span> <span class="hljs-number">1.1</span>em <span class="hljs-number">1.1</span>em -<span class="hljs-number">0.6</span>em <span class="hljs-hexcolor">#cb0000</span>, /* <span class="hljs-number">4</span> */ <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.3</span>);</span>
+  <span class="hljs-attribute">transition-duration</span><span class="hljs-value">: <span class="hljs-number">0.1</span>s;</span>
+}
+<span class="hljs-class">.btn4act</span><span class="hljs-class">.disabled</span> {
+  <span class="hljs-attribute">opacity</span><span class="hljs-value">: <span class="hljs-number">0.45</span>;</span>
+  <span class="hljs-attribute">cursor</span><span class="hljs-value">: default;</span>
+  <span class="hljs-attribute">box-shadow</span><span class="hljs-value">: none;</span>
+}
+<span class="hljs-class">.btn4act</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:hover</span>,
+<span class="hljs-class">.btn4act</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:focus</span>,
+<span class="hljs-class">.btn4act</span><span class="hljs-class">.disabled</span><span class="hljs-pseudo">:active</span> {
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#b50000</span>;</span>
+}
+</code></pre>
+
+	<div class="size_buttons">
+		<a href="#" data-width="100%" class="mybtn size active">Desktop</a>	
+		<a href="#" data-width="920" class="mybtn size">Tablet</a>
+		<a href="#" data-width="480" class="mybtn size">Mobile</a>
+	</div>
+	<div id="preview">
+		<!--link rel="stylesheet" type="text/css" href="buttons/default.css"-->
+		<iframe src="http://idtdesign.github.io/documentation/posts/buttons/default.html"><link rel="stylesheet" type="text/css" href="buttons/default.css"></iframe>
+	</div>
+</div>
+	</article>
+	<footer></footer>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script defer="defer"  src="http://idtdesign.github.io/documentation/vendor/jquery.js"></script><script defer="defer"  src="http://idtdesign.github.io/documentation/vendor/log.js"></script><script defer="defer"  src="http://idtdesign.github.io/documentation/vendor/modernizr.js"></script><script defer="defer"  src="http://idtdesign.github.io/documentation/scripts/script.js"></script>
+</body>
+</html>
