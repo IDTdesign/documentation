@@ -1,0 +1,9 @@
+---
+layout: 'content'
+folder: 'bonus_block'
+title: 'Bonus block'
+---
+
+<h3 id="description">Description</h3>
+
+Bonus block. Profile page.

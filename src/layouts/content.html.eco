@@ -15,10 +15,11 @@ layout: default
 		<%- @content %>
 	</div>
 	<h3 id="html">HTML<small>(click to show/hide)</small></h3>
-	<pre><code class="lang-html"><%- @include('/posts/'+@document.folder+'/default.html').replace /\START IMPORT....[\w\W]*? STOP/, "" %></code></pre>
 
-	<h3 id="css">LESS<small>(click to show/hide)</small></h3>
-	<pre><code id="html" class="lang-scss"><%- @include('/posts/'+@document.folder+'/default.css').replace /\START IMPORT \*\/[\w\W]*?\/\* STOP/, "" %></code></pre>
+	<pre><code class="lang-html"><%- @include('/posts/'+@document.folder+'/default.html').replace /\START IMPORT....[\w\W]*? STOP/, "" if @include('/posts/'+@document.folder+'/default.html') %></code></pre>
+
+	<h3 id="css">generated CSS<small>(click to show/hide)</small></h3>
+	<pre><code id="html" class="lang-scss"><%- @include('/posts/'+@document.folder+'/default.css').replace /\START IMPORT \*\/[\w\W]*?\/\* STOP/, "" if @include('/posts/'+@document.folder+'/default.css') %></code></pre>
 
 	<div class="size_buttons">
 		<a href="#" data-width="100%" class="mybtn size active">Desktop</a>	
@@ -27,6 +28,6 @@ layout: default
 	</div>
 	<div id="preview">
 		<!--link rel="stylesheet" type="text/css" href="<%- @document.folder %>/default.css"-->
-		<iframe src="/posts/<%- @document.folder %>/default.html"><link rel="stylesheet" type="text/css" href="<%- @document.folder %>/default.css"></iframe>
+		<iframe src="<%= @getUrl('/') %>posts/<%- @document.folder %>/default.html"><link rel="stylesheet" type="text/css" href="<%- @document.folder %>/default.css"></iframe>
 	</div>
 </div>

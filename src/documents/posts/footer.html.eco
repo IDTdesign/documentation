@@ -1,6 +1,7 @@
 ---
 layout: 'content'
 folder: 'footer'
+title: '[global] Footer'
 ---
 <h3 id="description">Description</h3>
 

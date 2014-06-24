@@ -22,7 +22,7 @@ docpadConfig = {
 			]
 
 			# The default title of our website
-			title: "Documentation test"
+			title: "Documentation [alpha]"
 
 			# The website description (for SEO)
 			description: """
@@ -43,13 +43,8 @@ docpadConfig = {
 			]
 
 			# The website's scripts
-			scripts: [
-				"""
-				<!-- jQuery -->
-				<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-				<script>window.jQuery || document.write('<script src="/vendor/jquery.js"><\\/script>')</script>
-				"""
-
+			scripts: [				
+				'/vendor/jquery.js'
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
 				'/scripts/script.js'
@@ -80,7 +75,13 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
-
+	plugins:
+		ghpages:
+			deployRemote: 'deploy'
+			deployBranch: 'gh-pages'
+		less:
+			compress: false
+					
 	# =================================
 	# Collections
 
@@ -114,6 +115,7 @@ docpadConfig = {
 			templateData:
 				site:
 					url: 'http://localhost:9778'
+
 
 
 	# =================================

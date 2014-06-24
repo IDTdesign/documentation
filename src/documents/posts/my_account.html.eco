@@ -1,5 +1,6 @@
 ---
 layout: 'content'
+title: 'My account'
 folder: 'my_account'
 ---
 <h3 id="description">Description</h3>

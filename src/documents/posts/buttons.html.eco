@@ -1,6 +1,7 @@
 ---
 layout: 'content'
 folder: 'buttons'
+title: '[global] Buttons'
 ---
 <h3 id="description">Description</h3>
 

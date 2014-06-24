@@ -1,0 +1,38 @@
+/* START IMPORT */
+@import "../../styles/mixins.css.less";
+@import "../../styles/variables.css.less";
+@import "../../styles/typo.css.less";
+body {
+	background: #333;
+}
+/* STOP */
+.bonus_block {
+	.border_radius(5px);
+	background: #fff;
+	padding: 25px;	
+	.description {
+		min-height: 215px;
+		h3 {
+			font-size: 24px;
+			color: #720000;
+		}
+		p {
+			margin: 0;
+		}
+		a {
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+	.terms {
+		font-size: 14px;
+		font-style: italic;
+		color: #999999;
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

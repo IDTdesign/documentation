@@ -5,7 +5,7 @@ layout: 'default'
 <ul>
 	<% for post in @getCollection('posts').sortArray(date: -1): %>
 	<li>
-		<h3><a href="<%= post.url %>"><%- post.title or post.name %></a></h3>
+		<a href="<%= @getUrl(post.url) %>"><%- post.title or post.name %></a>
 		<%- post.description %>
 	</li>
 	<% end %>
